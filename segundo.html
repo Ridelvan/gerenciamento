@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador Financeiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gerenciador Financeiro</h1>
+  </header>
+
+  <main>
+    <section class="saldo">
+      <h2>Saldo Total:</h2>
+      <div id="saldo-total">R$ 0,00</div>
+    </section>
+
+    <section class="controle">
+      <h3>Nova Transação</h3>
+      <input type="text" id="descricao" placeholder="Descrição" />
+      <input type="number" id="valor" placeholder="Valor (ex: 100 ou -50)" />
+      <input type="file" id="upload-imagem" accept="image/*" />
+      <button id="adicionar-transacao" class="btn">Adicionar Transação</button>
+    </section>
+
+    <section class="transacoes">
+      <h3>Histórico de Transações</h3>
+      <div id="lista-transacoes"></div>
+    </section>
+
+    <section class="controle-section">
+      <button id="resetar-tudo" class="btn reset-completo">Resetar Tudo</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.5;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+header p {
+    color: #bbbbbb;
+    font-size: 1.2rem;
+}
+
+/* Button Grid */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.grid-btn {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(45deg, #ff4d4d, #ff0000);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.grid-btn:hover {
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7);
+    transform: scale(1.1);
+}
+
+/* Confirmed Button */
+.grid-btn.confirmed {
+    background: linear-gradient(45deg, #4caf50, #2e7d32);
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.5);
+    color: #ffffff;
+}
+
+.grid-btn.confirmed:hover {
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.7);
+    transform: scale(1.1);
+}
+/* Estilos para o botão de confirmação */
+.confirm-btn {
+    background-color: rgba(255, 0, 0, 0.7); /* Fundo vermelho com transparência */
+    color: white; /* Texto em branco */
+    border: none; /* Remover borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Padding adequado */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    position: fixed; /* Posicionamento fixo */
+    top: 0; /* Posição no topo */
+    left: 0; /* Posição no canto esquerdo */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+/* Efeito de hover */
+.confirm-btn:hover {
+    background-color: rgba(255, 0, 0, 1); /* Alterar fundo para vermelho sólido ao passar o mouse */
+    transform: scale(1.1); /* Leve aumento de tamanho ao passar o mouse */
+}
+/* Estilo para o botão de Confirmar */
+.reset-btn {
+    background-color: rgba(255, 0, 0, 0.7); /* Cor de fundo vermelho */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito de hover */
+.reset-btn:hover {
+    background-color: rgba(255, 0, 0, 1); /* Cor sólida ao passar o mouse */
+    transform: scale(1.1); /* Leve aumento de tamanho */
+}

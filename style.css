@@ -1,0 +1,113 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #F5F5F5;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    color: #FF0000;
+  }
+  
+  .saldo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #saldo-total {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #1A1A1A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .controle {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #1A1A1A;
+    color: #FFFFFF;
+  }
+  
+  input::placeholder {
+    color: #888;
+  }
+  
+  button.btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button.btn:hover {
+    background: #DC143C;
+  }
+  
+  .transacoes {
+    margin-top: 20px;
+  }
+  
+  .transacoes .transacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1A1A1A;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .transacoes .transacao img {
+    max-width: 50px;
+    border-radius: 5px;
+  }
+  
+  .reset-completo {
+    background: #444;
+    color: #FF0000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .reset-completo:hover {
+    background: #FF0000;
+    color: #FFFFFF;
+  }
+  
+  @media (max-width: 600px) {
+    button.btn, input {
+      font-size: 0.9rem;
+    }
+  }
+  
